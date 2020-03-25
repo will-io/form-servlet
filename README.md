@@ -112,9 +112,9 @@ export PATH=/opt/apache-maven-3.6.3/bin:$PATH
 ```
 The line above assumes Maven's path is "/opt/apache-maven-3.6.3/bin", or that your Maven download has been moved there. You can use a different path too, make sure your path is reflected in this line.
 
-For Windows machines, add Maven's path to the PATH propertty in the system's environment variables.
+For Windows machines, add Maven's path to the PATH property in the system's environment variables.
 
-Important: Reopen your terminal for the changes to be reflected.
+**Important:** Reopen your terminal for the changes to be reflected.
 
 #### Heroku CLI installation
 If you have not installed the Heroku CLI  before, you can get it here: https://devcenter.heroku.com/articles/heroku-cli.
