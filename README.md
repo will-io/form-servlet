@@ -169,7 +169,8 @@ import javax.servlet.annotation.WebServlet;
 The line above handles **servlet mapping**, which makes its servlet instance available at yourServerUrl/**servicePathName**.
 
 Now you can observe, debug or test your app locally by building your app (in terminal: ```mvn package```) and running it in your local server (in terminal: ```heroku local```). After that, ```localhost:5000/servicePathName``` (as in urlPatterns property from the annotation above) must be working.
-**Note:** If your mmaping setup failed or is missing the URL ```localhost:5000/servicePathName``` or ```yourWebsite/servicePathName``` won't be accessible and show a 404: Not found error.
+
+**Note:** If your servlet mapping setup failed or is missing, the URL ```localhost:5000/servicePathName``` or ```yourWebsite/servicePathName``` won't be accessible and show a ```404: Not found error```. Make sure the @WebServlet annotation is in the desired servlet java file and the ```localhost:5000/servicePathName``` matches ```@WebServlet.. urlPatterns = {"/servicePathName"}```.
 
 
 Finally, once you are done making changes in your app and want to make it public, pushing your local changes to your repo will automatically deploy this version of the app in your Heroku hosting (described in the Deployment section).
