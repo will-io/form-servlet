@@ -5,6 +5,9 @@ There are two activities covered in this tutorial: deployment will cover how to 
 
 Check the currently deployed version: https://swe432tomcat.herokuapp.com
 
+## Prelude
+We are working with two different phases of the software lifecycle: **development**(programming, debugging, testing) and **deployment**(publishing your app in your servers so clients can use it).  Heroku offers a hosting service for your web app and can be linked with GitHub to auto-deploy it, and also offers development tools so you can run your app locally.
+
 ## Quick Reference
 Use these commnads only if you already followed this tutorial and want a quick reminder of common tasks:
 
@@ -59,10 +62,15 @@ We will use this URL in step 3.
 
 Remember to replace the url from step 2 ( ``` https://github.com/<your_username>/<newly_created_repo_name>.git ``` ) with your own repo's url.
 
+#### a. Setting up your remote repo in Git
+
 ```
 cd swe432tomcat
 git init
 git remote set-url origin "https://github.com/<your_username>/<newly_created_repo_name>.git"
+```
+#### b. Push your local changes into your remote repo
+```
 git add .
 git commit -m "Initial commit: cloned repo"
 git push
