@@ -114,7 +114,7 @@ The line above assumes Maven's path is "/opt/apache-maven-3.6.3/bin", or that yo
 
 For Windows machines, add Maven's path to the PATH property in the system's environment variables.
 
-**Important:** Reopen your terminal for the changes to be reflected.
+**Note:** Reopen your terminal for the changes to be reflected.
 
 #### Heroku CLI installation
 If you have not installed the Heroku CLI  before, you can get it here: https://devcenter.heroku.com/articles/heroku-cli.
@@ -128,7 +128,7 @@ for the following:
 ```
 web: target\bin\webapp.bat
 ```
-**Important:** If you are Windows user, do not push your Procfile to your remote repo. An error like this one will be thrown:
+**Note:** If you are Windows user, do not push your Procfile to your remote repo. An error like this one will be thrown:
 ```"targetbinwebapp not found" error and then an "app crashed" error with code H10 ...```
 
 ### Build and run your app
@@ -155,7 +155,7 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet( name = "servletName", urlPatterns = {"/servicePathName"} )
 ```
-The line above handles **servlet mapping**, which makes its servlet class available at yourServerUrl/**servicePathName**.
+The line above handles **servlet mapping**, which makes its servlet instance available at yourServerUrl/**servicePathName**.
 
 Now you can observe, debug or test your app locally by building your app (in terminal: ```mvn package```) and running it in your local server (in terminal: ```heroku local```). After that, ```localhost:5000/servicePathName``` (as in urlPatterns property from the annotation above) must be working.
 
