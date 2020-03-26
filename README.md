@@ -128,6 +128,8 @@ for the following:
 ```
 web: target\bin\webapp.bat
 ```
+**Important:** If you are Windows user, do not push your Procfile to your remote repo. An error like this one will be thrown:
+```"targetbinwebapp not found" error and then an "app crashed" error with code H10 ...```
 
 ### Build and run your app
 To run the app contained in your repo, go your repo's root folder, the "POM.xml" should be there, this file is the configuration Maven uses to build your app so Heroku can run it. You should perform the following commands each time you want to run the latest version of your app, make sure there are no errors after you run them. 
@@ -147,14 +149,13 @@ You should be able to access your app at http://localhost:5000.
 
 ### Making changes: adding a new servlet
 
-In your machine, place your servlet file in the ```src/main/servlet``` folder and add the servlet annotation so your app builder (via Maven) knows how to index it:
+In your machine, place your servlet file in the ```src/main/java/servlet``` folder and add the servlet annotation so your Apache Tomcat knows how to map it:
 ```
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet( name = "servletName", urlPatterns = {"/servicePathName"} )
 ```
- 
-You can inspect the [example](https://github.com/luminaxster/swe432tomcat/blob/master/src/main/java/servlet/HelloServlet.java) in that folder for more details.
+The line above handles **servlet mapping**, which makes its servlet class available at yourServerUrl/**servicePathName**.
 
 Now you can observe, debug or test your app locally by building your app (in terminal: ```mvn package```) and running it in your local server (in terminal: ```heroku local```). After that, ```localhost:5000/servicePathName``` (as in urlPatterns property from the annotation above) must be working.
 
