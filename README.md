@@ -172,8 +172,9 @@ Now you can observe, debug or test your app locally by building your app (in ter
 
 **Note:** If your servlet mapping setup failed or is missing, the URL ```localhost:5000/servicePathName``` or ```yourWebsite/servicePathName``` won't be accessible and show a ```404: Not found error```. Make sure the @WebServlet annotation is in the desired servlet java file and the ```localhost:5000/servicePathName``` matches ```@WebServlet.. urlPatterns = {"/servicePathName"}```.
 
+## Developing and Deploying continuous loop
 
-Finally, once you are done making changes in your app and want to make it public, pushing your local changes to your repo will automatically deploy this version of the app in your Heroku hosting (described in the Deployment section).
+Finally, once you are done making changes in your app locally -- you have achieved your development goals -- and now want to publish your app so users get the latest version -- deploy your app, pushing your local changes to your repo will automatically deploy this version of the app in your Heroku hosting (described in the Deployment section). 
 
 ## Important
 After you are satisfied changing your code, remember they are still in your machine. You must push these changes to your github's web repo (remote), only then they will be visible to everybody. If you followed the steps linking your Heroku app with this repo, pushing changes in to your remote repo will redeploy your Heroku app.
