@@ -8,7 +8,7 @@ Check the currently deployed version: https://swe432tomcat.herokuapp.com
 ## Prelude
 We are working with two different phases of the software lifecycle: **development**(programming, debugging, testing) and **deployment**(publishing your app in your servers so clients can use it).  Heroku offers a hosting service for your web app and can be linked with GitHub to auto-deploy it, and also offers development tools so you can run your app locally.
 
-**Disclaimer:** Please take a moment to explore each concept, technology, command, activity and action used in this tutorial, for brevity the level of detail in focused on help you deploy servlets in Heroku. 
+**Disclaimer:** Please take a moment to explore each concept, technology, command, activity and action used in this tutorial, for brevity the level of detail is limited to help you deploy servlets in Heroku. 
 
 ## Quick Reference
 Use these commnads only if you already followed this tutorial and want a quick reminder of common tasks:
@@ -78,7 +78,7 @@ git add .
 git commit -m "Initial commit: cloned repo"
 git push
 ```
-Remember to be explicit with your commit messages, this will document the rationale of your code changes and be seen in each file history
+Remember to be explicit with your commit messages, this will document the rationale of your code changes and be seen in each file history by everyone wanting to contribute to your project, or even you after a month not looking at the file.
 ### 4. Create a Heroku app
 
 Go to https://dashboard.heroku.com/apps: click on "New" > "Create New App", provide a name, and click on "create app".
