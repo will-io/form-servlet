@@ -6,7 +6,7 @@ There are two activities covered in this tutorial: deployment will cover how to 
 Check the currently deployed version: https://swe432tomcat.herokuapp.com
 
 ## Prelude
-We are working with two different phases of the software lifecycle: **development**(programming, debugging, testing) and **deployment**(publishing your app in your servers so clients can use it).  Heroku offers a hosting service for your web app and can be linked with GitHub to auto-deploy it, and also offers development tools so you can run your app locally.
+We are working with two different phases of the software lifecycle: **development**(programming, debugging, program testing) and **deployment**(publishing your app in your servers so clients can use it).  Heroku offers a hosting service for your web app and can be linked with GitHub to auto-deploy it, and also offers development tools so you can run your app locally.
 
 **Disclaimer:** Please take a moment to explore each concept, technology, command, activity and action used in this tutorial, for brevity the level of detail is limited to help you deploy servlets in Heroku. 
 
