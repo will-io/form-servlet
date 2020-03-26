@@ -8,6 +8,8 @@ Check the currently deployed version: https://swe432tomcat.herokuapp.com
 ## Prelude
 We are working with two different phases of the software lifecycle: **development**(programming, debugging, testing) and **deployment**(publishing your app in your servers so clients can use it).  Heroku offers a hosting service for your web app and can be linked with GitHub to auto-deploy it, and also offers development tools so you can run your app locally.
 
+**Disclaimer:** Please take a moment to explore each concept, technology, command, activity and action used in this tutorial, for brevity the level of detail in focused on help you deploy servlets in Heroku. 
+
 ## Quick Reference
 Use these commnads only if you already followed this tutorial and want a quick reminder of common tasks:
 
@@ -63,19 +65,20 @@ We will use this URL in step 3.
 Remember to replace the url from step 2 ( ``` https://github.com/<your_username>/<newly_created_repo_name>.git ``` ) with your own repo's url.
 
 #### a. Setting up your remote repo in Git
-
+The following commands **only need have to be used once**, in the command line:
 ```
 cd swe432tomcat
 git init
 git remote set-url origin "https://github.com/<your_username>/<newly_created_repo_name>.git"
 ```
 #### b. Push your local changes into your remote repo
+The following commands **will be reused every time you want to send your changes to GitHub**, in the command line:
 ```
 git add .
 git commit -m "Initial commit: cloned repo"
 git push
 ```
-
+Remember to be explicit with your commit messages, this will document the rationale of your code changes and be seen in each file history
 ### 4. Create a Heroku app
 
 Go to https://dashboard.heroku.com/apps: click on "New" > "Create New App", provide a name, and click on "create app".
