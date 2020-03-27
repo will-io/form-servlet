@@ -135,11 +135,13 @@ private void PrintBody (PrintWriter out, String lhs, String rhs, String rslt)
    out.println("multiple submit buttons.");
    out.println("</p>");
    out.print  ("<form method=\"post\"");
-   //David: (5) changes  action's url to your own url using a realtive path to the servlet
+   //David: (5) changes  action's url to your own url using a relative path to the servlet
    //In the form action, you can specify an absolute or relative path to your URL
    // and optionally the servlet that will respond to the action.
    //However, the original line only works when your app is deployed
    // and not when running locally (yourpage.com vs localhost:port).
+   // For simplicity, I used a relative path but it is strongly recommended
+   // to use absolute paths because they can cached by web servers and browsers
    out.println(" action=\"/" + Servlet + "\">");
    out.println("");
    out.println(" <table>");
