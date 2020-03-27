@@ -135,7 +135,9 @@ private void PrintBody (PrintWriter out, String lhs, String rhs, String rslt)
    out.println("multiple submit buttons.");
    out.println("</p>");
    out.print  ("<form method=\"post\"");
-   //David: (5) changes  action's url to your own url using a relative path to the servlet
+   //David: (5) changes  action's url to your own url using a relative path to the servlet.
+   //If left untouched, the operation buttons go to Prof. Offutt website, and
+   // if you provide an erroneous path you will see a 404 (Not Found) error.
    //In the form action, you can specify an absolute or relative path to your URL
    // and optionally the servlet that will respond to the action.
    //However, the original line only works when your app is deployed
