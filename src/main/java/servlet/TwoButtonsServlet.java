@@ -37,7 +37,7 @@ public class TwoButtonsServlet extends HttpServlet
 {
 
 // Location of servlet.
-// David: (6) adds the path of your form submit action
+// David: (5) adds the path of your form submit action
 static String Domain  = "";
 static String Path    = "";
 static String Servlet = "twoButtons";
@@ -80,7 +80,7 @@ public void doPost (HttpServletRequest request, HttpServletResponse response)
    {
       rslt = new Float(lhsVal.floatValue() - rhsVal.floatValue());
    }
-   //David: (7) adds multiplication action's resolution
+   //David: (6) adds multiplication action's resolution
    else if (operation.equals(OperationMult))
    {
       rslt = new Float(lhsVal.floatValue() * rhsVal.floatValue());
@@ -135,7 +135,7 @@ private void PrintBody (PrintWriter out, String lhs, String rhs, String rslt)
    out.println("multiple submit buttons.");
    out.println("</p>");
    out.print  ("<form method=\"post\"");
-   //David: (5) changes  action's url to your own url using a relative path to the servlet.
+   //David: (4) changes  action's url to your own url using a relative path to the servlet.
    //If left untouched, the operation buttons go to Prof. Offutt website, and
    // if you provide an erroneous path you will see a 404 (Not Found) error.
    //In the form action, you can specify an absolute or relative path to your URL
@@ -164,7 +164,7 @@ private void PrintBody (PrintWriter out, String lhs, String rhs, String rslt)
    out.println(" <br>");
    out.println(" <input type=\"submit\" value=\"" + OperationAdd + "\" name=\"Operation\">");
    out.println(" <input type=\"submit\" value=\"" + OperationSub + "\" name=\"Operation\">");
-   // David: (4) adds multiplication button
+   // David: (3) adds multiplication button
    out.println(" <input type=\"submit\" value=\"" + OperationMult + "\" name=\"Operation\">");
    out.println(" <input type=\"reset\" value=\"Reset\" name=\"reset\">");
    out.println("</form>");
