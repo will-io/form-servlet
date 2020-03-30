@@ -36,19 +36,6 @@ import javax.servlet.annotation.WebServlet;
 public class CoffeeShopReview extends HttpServlet
 {
 
-// Location of servlet.
-//static String Domain  = "swe432hello.herokuapp.com";
-//static String Path    = "/";
-//static String Servlet = "twoButtons";
-
-// Button labels
-//static String OperationAdd = "Add";
-//static String OperationSub = "Subtract";
-//static String OperationMul = "Multiply";
-
-// Other strings.
-//static String Style ="https://www.cs.gmu.edu/~offutt/classes/432/432-style.css";
-
 /** *****************************************************
  *  Overrides HttpServlet's doPost().
  *  Converts the values in the form, performs the operation
@@ -144,16 +131,6 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 ********************************************************* */
 private void PrintHead (PrintWriter out)
 {
-/**
-   out.println("<html>");
-   out.println("");
-
-   out.println("<head>");
-   out.println("<title>Assignment 6</title>");
-   out.println(" <link rel=\"stylesheet\" type=\"text/css\" href=\"" + Style + "\">");
-   out.println("</head>");
-   out.println("");
-**/
 
 out.println("<html>");
 out.println("        <head>");
@@ -230,47 +207,14 @@ out.println("        </head>");
 ********************************************************* */
 private void PrintBody (PrintWriter out, String lhs, String rhs, String rslt)
 {
-   /**
-   out.println("<body>");
-   out.println("<p>");
-   out.println("A simple example that demonstrates how to operate with");
-   out.println("multiple submit buttons.");
-   out.println("</p>");
-   out.print  ("<form method=\"post\"");
-   out.println(" action=\"https://" + Domain + Path + Servlet + "\">");
-   out.println("");
-   out.println(" <table>");
-   out.println("  <tr>");
-   out.println("   <td>First value:");
-   out.println("   <td><input type=\"text\" name=\"LHS\" value=\"" + lhs + "\" size=5>");
-   out.println("  </tr>");
-   out.println("  <tr>");
-   out.println("   <td>Second value:");
-   out.println("   <td><input type=\"text\" name=\"RHS\" value=\"" + rhs + "\" size=5>");
-   out.println("  </tr>");
-   out.println("  <tr>");
-   out.println("   <td>Result:");
-   out.println("   <td><input type=\"text\" name=\"RHS\" value=\"" + rslt + "\" size=6>");
-   out.println("  </tr>");
-   out.println(" </table>");
-   out.println(" <br>");
-   out.println(" <br>");
-   out.println(" <input type=\"submit\" value=\"" + OperationAdd + "\" name=\"Operation\">");
-   out.println(" <input type=\"submit\" value=\"" + OperationSub + "\" name=\"Operation\">");
-   out.println(" <input type=\"submit\" value=\"" + OperationMul + "\" name=\"Operation\">");
-   out.println(" <input type=\"reset\" value=\"Reset\" name=\"reset\">");
-   out.println("</form>");
-   out.println("");
-   out.println("</body>");
-   **/
+
 out.println("        <style>");
 out.println("                body {background-color:#ddf8ff}");
 out.println("        </style>");
 out.println("        <body>");
 out.println("        <div style=\"text-align:center\"><h1>GMU CAMPUS COFFEE</h1>");
-out.println("                <h3>DUE: Tuesday March 3</h3>");
 out.println("                                ");
-out.println("                 <button onclick=\"displayDate()\">and today is?</button>");
+out.println("                 <button onclick=\"displayDate()\">today is?</button>");
 out.println("                         <script>");
 out.println("                                 function displayDate() {");
 out.println("                                     document.getElementById(\"demo\").innerHTML = Date();");
@@ -345,11 +289,11 @@ out.println("<p>");
 out.println("<b>Your Rating:</b>");
 out.println("<br>");
 out.println("<select rate=\"rating\" name=\"rating\">");
-out.println("<option value=“one” selected=“selected”>&#9733</option>");
-out.println("<option value=“two”>&#9733 &#9733</option>");
-out.println("<option value=“three”>&#9733 &#9733 &#9733</option>");
-out.println("<option value=“four”>&#9733 &#9733 &#9733 &#9733 </option>");
-out.println("<option value=“five”>&#9733 &#9733 &#9733 &#9733 &#9733</option>");
+out.println("<option value=\"one\" selected=“selected”>&#9733</option>");
+out.println("<option value=\"two\">&#9733 &#9733</option>");
+out.println("<option value=\"three\">&#9733 &#9733 &#9733</option>");
+out.println("<option value=\"four\">&#9733 &#9733 &#9733 &#9733 </option>");
+out.println("<option value=\"five\">&#9733 &#9733 &#9733 &#9733 &#9733</option>");
 out.println("</select>");
 out.println("</p>");
 out.println("");
