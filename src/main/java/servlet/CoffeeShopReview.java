@@ -233,7 +233,7 @@ out.println("");
 out.println("  <!-- Modal content -->");
 out.println("  <div class=\"modal-content\">");
 out.println("    <span class=\"close\">&times;</span>");
-out.println("    <p> The work was split evenly. Kim worked mostly on the HTML layout/format of the webpage. Willy worked mostly on the CSS and Javascript events. We both did code reviews and refactoring to make it usable later on. </p>");
+out.println("    <p> The work was split evenly. Kim worked mostly on the HTML layout/format of the webpage and Intergrating the HTML onto the Java Servlet. Willy worked mostly on the form handling events and deploying the web page on heroku. We both did some code reviews and refactoring </p>");
 out.println("  </div>");
 out.println("");
 out.println("</div>");
