@@ -135,7 +135,7 @@ private void PrintHead (PrintWriter out)
 out.println("<html>");
 out.println("        <head>");
 out.println("                <title>Assignment 6</title>");
-out.println("                <link rel=\"shortcut icon\" type=\"image/png\" href=\"/swe432tomcat/src/main/java/servlet/gmu_coffee.png\">");
+out.println("                <link rel=\"shortcut icon\" type=\"image/png\" href=\"https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-2000w.jpg\">");
 out.println("<style>");
 out.println("/* Modal background */");
 out.println(".modal {");
@@ -270,7 +270,7 @@ out.println("<form Action=\"https://assignment-6-swe432.herokuapp.com/CoffeeShop
 out.println("");
 out.println("<p style = \"color:blue; font-size:25px;\"><b><i> select a coffe shop around campus and give it a rating :) </i></b></p>");
 out.println("<p><b>We want our coffee to be as tasty as possible...</b></p>");
-out.println("<img src=\"coffee.jpg\">");
+out.println("<img height=\"140\" width=\"180\"src=\"https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-2000w.jpg\">");
 out.println("<br>");
 out.println("");
 out.println("<table>");
@@ -325,6 +325,7 @@ out.println("</table>");
 out.println("</form >");
 out.println("</fieldset>");
 out.println("        <p>Assignment 6 instructions: <a href=\"https://cs.gmu.edu/~offutt/classes/432/assigns/assign06.html\">H6 instructions</a></p>    ");
+out.println("<p> DUE TO COVID-19 WE ADVISE YOU MAKE COFFEE AT HOME, THANK YOU. </p> ");
 out.println("               </div>");
 out.println("        </body>");
 } // End PrintBody
